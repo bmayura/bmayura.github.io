@@ -4155,15 +4155,17 @@ input, select, textarea {
 
 	}
 
-/* === Custom: mosaic banner background === */
+/* Custom banner image override */
 #banner {
-    background-image: url("../images/danielsmosaic.png");
+    background-image: url("../images/danielsmosaic.png") !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-/* So the text is still readable on top of the image */
+/* Remove the default dark overlay */
 #banner:before {
-    background-color: rgba(0, 0, 0, 0.45);  /* tweak 0.45 → 0.3 / 0.6 to taste */
+    background: rgba(0,0,0,0.25) !important; /* light tint */
 }
+
+
